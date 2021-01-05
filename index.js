@@ -1,4 +1,4 @@
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
   if (window.innerWidth < 768) {
     document.querySelectorAll("button")[2].classList.add("form-control");
     document.querySelector("#working div").classList.add("info");
@@ -10,15 +10,13 @@ window.addEventListener("resize", function() {
     document.querySelector("#contact").classList.add("text-right");
     document.querySelector("#links").classList.add("text-right");
   }
-  else if (window.innerWidth < 768 || window.innerWidth > 992){
+  else if (window.innerWidth < 768 || window.innerWidth > 992) {
     document.querySelector("#contact").classList.remove("text-right");
     document.querySelector("#links").classList.remove("text-right");
   }
 });
 
-// window.onload = function() {
-  if (window.innerWidth >= 768 && window.innerWidth <= 992) {
-    document.querySelector("#contact").classList.add("text-right")
-    document.querySelector("#links").classList.add("text-right")
-  }
-// }
+if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+  document.querySelector("#contact").classList.add("text-right")
+  document.querySelector("#links").classList.add("text-right")
+}
